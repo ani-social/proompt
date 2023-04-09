@@ -9,7 +9,7 @@ python main.py
 
 ## CODE SNIPPETS
 ### PYTHON
-<code>
+```py
 import requests
 
 response = requests.post("http://127.0.0.1:7860/run/predict", json={
@@ -19,9 +19,10 @@ response = requests.post("http://127.0.0.1:7860/run/predict", json={
 }).json()
 
 data = response["data"]
-<code>
+```
+
 ### JAVASCRIPT
-<code>
+```js 
 const response = await fetch("http://127.0.0.1:7860/run/predict", {
 	method: "POST",
 	headers: { "Content-Type": "application/json" },
@@ -33,4 +34,4 @@ const response = await fetch("http://127.0.0.1:7860/run/predict", {
 });
 
 const data = await response.json();
-<code>
+```
